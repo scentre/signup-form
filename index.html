@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/output.css" rel="stylesheet" />
+    <title>Sign up form</title>
+  </head>
+  <body class="font-poppins">
+    <div
+      class="bg-primary-red w-screen h-screen md:bg-bg-desktop bg-bg-mobile flex flex-col gap-10 md:gap-5 md:flex-row py-20 px-10 font-poppins md:justify-center md:items-center"
+    >
+      <div class="flex-1">
+        <h2 class="text-2xl md:text-4xl text-center font-bold text-white pb-3">
+          Learn to code by watching others
+        </h2>
+
+        <p class="md:text-lg text-white text-center">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+      <div class="flex-1">
+        <p
+          class="bg-accent-blue rounded-lg px-4 py-3 text-center text-white mb-5 md:w-[600px] md:mx-auto"
+        >
+          <span class="font-bold"> Try it free 7 days </span> then <br />
+          $20/mo. thereafter
+        </p>
+
+        <form
+          id="form"
+          class="flex flex-col gap-3 bg-white shadow-lg rounded-lg p-10 px-5 md:w-[600px] md:mx-auto"
+        >
+          <div class="relative">
+            <img
+              src="/images/icon-error.svg"
+              alt=""
+              class="img-fname absolute right-2 bottom-3 hidden "
+            />
+            <input
+              type="text"
+              name="firstname"
+              class="border border-neutral-greyish-blue p-3 rounded-lg placeholder:text-neutral-dark-blue active:bg-neutral-dark-blue focus:outline-none focus:ring focus:ring-neutral-dark-blue firstname w-full"
+              placeholder="First Name"
+            />
+          </div>
+
+          <div class="relative">
+            <img
+              src="/images/icon-error.svg"
+              alt=""
+              class="img-lname absolute right-2 bottom-3 hidden"
+            />
+
+            <input
+              type="text"
+              name="lastname"
+              class="border border-neutral-greyish-blue p-3 rounded-lg placeholder:text-neutral-dark-blue active:bg-neutral-dark-blue focus:outline-none focus:ring focus:ring-neutral-dark-blue lastname w-full"
+              placeholder="Last Name"
+            />
+          </div>
+
+          <div class="relative">
+            <img
+              src="/images/icon-error.svg"
+              alt=""
+              class="img-email absolute right-2 bottom-3 hidden"
+            />
+            <input
+              type="email"
+              name="email"
+              class="border border-neutral-greyish-blue p-3 rounded-lg placeholder:text-neutral-dark-blue active:bg-neutral-dark-blue focus:outline-none focus:ring focus:ring-neutral-dark-blue email w-full"
+              placeholder="Email Address"
+            />
+          </div>
+
+          <div class="relative">
+            <img
+              src="/images/icon-error.svg"
+              alt=""
+              class="img-pword absolute right-2 bottom-3 hidden"
+            />
+            <input
+              type="password"
+              name="password"
+              class="border border-neutral-greyish-blue p-3 rounded-lg placeholder:text-neutral-dark-blue active:bg-neutral-dark-blue focus:outline-none focus:ring focus:ring-neutral-dark-blue password w-full"
+              placeholder="password"
+            />
+          </div>
+
+          <button
+            class="bg-primary-green mt-3 p-4 text-white rounded-lg cursor-pointer"
+            type="submit"
+          >
+            Claim your free trial
+          </button>
+
+          <p class="text-neutral-greyish-blue text-xs text-center">
+            By clicking the button, you are agreeing to our
+            <span class="text-primary-red"> Terms and Services</span>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
